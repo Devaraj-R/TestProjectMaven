@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Testing">
+<listeners>
+<listener class-name="com.qa.utility.Reporting">
+</listener>
+</listeners>
+<parameter name="Url" value="https://wynk.in/music/"></parameter>
+	<test thread-count="5" name="Functional testing1">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.testscripts.TC_WynkSignIn_01"/>
+		</classes>
+	</test>
+</suite>
+<!-- https://wynk.in/music/ -->

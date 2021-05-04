@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Automation_Testing">
+              <span class="suite-name border-passed">Automation Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Automation_Testing">
+                    <span>F:\AutomationTesting\Wynk\src\test\java\com\qa\utility\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Automation_Testing">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Automation_Testing">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Automation_Testing">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Automation_Testing">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Automation_Testing">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Automation_Testing">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Testing" class="hide-methods passed suite-Automation_Testing"> (hide)</a> <!-- hide-methods passed suite-Automation_Testing -->
+                      <a href="#" panel-name="suite-Automation_Testing" class="show-methods passed suite-Automation_Testing"> (show)</a> <!-- show-methods passed suite-Automation_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Testing">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Testing" title="com.qa.testscripts.TC_AmazonSearch_01" hash-for-method="searchItem(Books, harry potor)">searchItem(Books, harry potor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Testing" title="com.qa.testscripts.TC_AmazonSearch_01" hash-for-method="searchItem(Furniture, wooden)">searchItem(Furniture, wooden)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Testing" title="com.qa.testscripts.TC_AmazonSearch_01" hash-for-method="searchItem(Electronics, mobiles)">searchItem(Electronics, mobiles)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Testing" class="panel Automation_Testing">
+          <div class="suite-Automation_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testscripts.TC_AmazonSearch_01</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItem(Books, harry potor)">
+                  </a> <!-- searchItem(Books, harry potor) -->
+                  <span class="method-name">searchItem</span>
+                  <span class="parameters">(Books, harry potor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItem(Furniture, wooden)">
+                  </a> <!-- searchItem(Furniture, wooden) -->
+                  <span class="method-name">searchItem</span>
+                  <span class="parameters">(Furniture, wooden)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItem(Electronics, mobiles)">
+                  </a> <!-- searchItem(Electronics, mobiles) -->
+                  <span class="method-name">searchItem</span>
+                  <span class="parameters">(Electronics, mobiles)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Testing-class-passed -->
+        </div> <!-- panel Automation_Testing -->
+        <div panel-name="test-xml-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\AutomationTesting\Wynk\src\test\java\com\qa\utility\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Automation Testing&quot;&gt;
+  &lt;parameter name=&quot;Url&quot; value=&quot;https://amazon.in/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.utility.Reporting&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Functional testing1&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testscripts.TC_AmazonSearch_01&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Functional testing1 --&gt;
+&lt;/suite&gt; &lt;!-- Automation Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Functional testing1 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Testing');
+function tableData_Automation_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchItem')
+data.setCell(0, 2, 'com.qa.testscripts.TC_AmazonSearch_01')
+data.setCell(0, 3, 31080);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchItem')
+data.setCell(1, 2, 'com.qa.testscripts.TC_AmazonSearch_01')
+data.setCell(1, 3, 26231);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchItem')
+data.setCell(2, 2, 'com.qa.testscripts.TC_AmazonSearch_01')
+data.setCell(2, 3, 13285);
+window.suiteTableData['Automation_Testing']= { tableData: data, tableDiv: 'times-div-Automation_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Automation_Testing">
+              </div> <!-- times-div-Automation_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItem(Books, harry potor)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Harry Potter and the Order of the Phoenix – Gryffindor Edition (House Edition Gryffindor)</span>
+                <span class="reporter-method-output">Harry Potter and the Philosopher's Stone</span>
+                <span class="reporter-method-output">Harry Potter and the Sorcerer's Stone / Harry Potter and the Chamber of Secrets / Harry Poter and the Prisoner of Azkaban</span>
+                <span class="reporter-method-output">Harry Potter and the Goblet of Fire (Harry Potter 4)</span>
+                <span class="reporter-method-output">Harry Potter Box Set: The Complete Collection (Children’s Paperback) (Set of 7 Volumes)</span>
+                <span class="reporter-method-output">Harry Potter and the Order of the Phoenix – Ravenclaw Edition (House Edition Ravenclaw)</span>
+                <span class="reporter-method-output">Harry Potter and the Prisoner of Azkaban (Harry Potter 3)</span>
+                <span class="reporter-method-output">Harry Potter and the Chamber of Secrets (Harry Potter 2)</span>
+                <span class="reporter-method-output">Harry Potter and the Order of the Phoenix (Harry Potter 5)</span>
+                <span class="reporter-method-output">The Tales of Beedle the Bard</span>
+                <span class="reporter-method-output">Fantastic Beasts and Where to Find Them: The Original Screenplay</span>
+                <span class="reporter-method-output">Harry Potter and the Half Blood Prince</span>
+                <span class="reporter-method-output">Harry Potter Ane Shapit Putra</span>
+                <span class="reporter-method-output">Harry Potter 7 Volume Box Set + Hogwarts Library</span>
+                <span class="reporter-method-output">Harry Potter and the Cursed Child - Parts One and Two: The Official Playscript of the Original West End Production (Harry Potter Officl Playscript)</span>
+                <span class="reporter-method-output">Harry Potter And The Deathly Hallows (Harry Potter 7) + Harry Potter And The Chamber Of Secrets (Harry Potter 2) (Set of 2 Books)</span>
+                <span class="reporter-method-output">Harry Potter And The Deathly Hallows (Harry Potter 7) + Harry Potter And The Half Blood Prince + Harry Potter And The Goblet Of Fire (Harry Potter 4) (Set of 3 Books)</span>
+                <span class="reporter-method-output">Harry Potter And The Half Blood Prince + Harry Potter And The Order Of The Phoenix (Harry Potter 5) (Set of 2 Books)</span>
+                <span class="reporter-method-output">Harry Potter And The Deathly Hallows (Harry Potter 7) + Harry Potter And The Order Of The Phoenix (Harry Potter 5) + Harry Potter And The Goblet Of Fire (Harry Potter 4) (Set of 3 Books)</span>
+                <span class="reporter-method-output">Harry Potter and the Order of the Phoenix – Slytherin Edition (House Edition Slytherin)</span>
+                <span class="reporter-method-output">The Funfair of Fear! - A Measle Stubbs Adventure</span>
+                <span class="reporter-method-output">The Giver Boxed Set: The Giver, Gathering Blue, Messenger, Son (The Giver Quartet)</span>
+                <span class="reporter-method-output">₹665</span>
+                <span class="reporter-method-output">₹262</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹4,356
+06</span>
+                <span class="reporter-method-output">₹6,388</span>
+                <span class="reporter-method-output">₹436</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹2,665</span>
+                <span class="reporter-method-output">₹799</span>
+                <span class="reporter-method-output">₹8,191</span>
+                <span class="reporter-method-output">₹473</span>
+                <span class="reporter-method-output">₹689</span>
+                <span class="reporter-method-output">₹307</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹302</span>
+                <span class="reporter-method-output">₹93</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹553</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹487</span>
+                <span class="reporter-method-output">₹333</span>
+                <span class="reporter-method-output">₹435</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹309</span>
+                <span class="reporter-method-output">₹3,790</span>
+                <span class="reporter-method-output">₹315</span>
+                <span class="reporter-method-output">₹0</span>
+                <span class="reporter-method-output">₹761</span>
+                <span class="reporter-method-output">₹1,330</span>
+                <span class="reporter-method-output">₹958</span>
+                <span class="reporter-method-output">₹1,404</span>
+                <span class="reporter-method-output">₹779</span>
+                <span class="reporter-method-output">₹719</span>
+                <span class="reporter-method-output">₹809</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItem(Furniture, wooden)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Benesta Wooden Tabletop Ironing Board</span>
+                <span class="reporter-method-output">Sajani Wooden Henger (80)</span>
+                <span class="reporter-method-output">Rosemoore Scented Wooden Balls with Sandalwood & Cedar Fragrance for Home and Office</span>
+                <span class="reporter-method-output">DFR Handmade Wooden -Leatherite Black Colour Coaster- Set of 6 for Home Kitchen Office Desk (4x4 inch) Pack of 6</span>
+                <span class="reporter-method-output">DECORVAIZ Wooden Premium Quality Handmade Kitchen Cooking Spatula, Non Stick Serving Set of 7, 28CM|2 Frying|1 Serving|1 Spatula|1 Chapati Spoon|1 Desert|1 Rice</span>
+                <span class="reporter-method-output">The Indus Valley Wooden Spoon for Cooking [ Stirrer / 30cm / Neem Wood ]</span>
+                <span class="reporter-method-output">Simran Handicrafts ARMAN SPOONS - Believe in Quality Royal Teak Wood Brown Nonstick Cooking Spatula - Set of 2</span>
+                <span class="reporter-method-output">WOOD ART STORE Handmade Wooden Serving and Cooking Spoon Kitchen Utensil Set of 5</span>
+                <span class="reporter-method-output">Raja handicraft Wooden Masala Spoon, Brown - Set of 6</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">ExclusiveLane Sheesham Wooden Table Top Masala Dabba Containers Jars & Wooden Masala Box for Kitchen Masala Dani Wooden Spice Box Set for Kitchen with Spoon (9 Small Partitions, Non Detachable, Brown)</span>
+                <span class="reporter-method-output">Jk Handicrafts Handmade Wooden Non-Stick Serving and Cooking Spoon Kitchen Tools Utensil, Set of 4</span>
+                <span class="reporter-method-output">Vintage Wooden Multipurpose Folding Rack/Plant Stand with 3 Decks/Living Room Side Stand/Wooden Stool/Flower Pot Stand/Vase Stand Plant Stand for Garden and Outdoors</span>
+                <span class="reporter-method-output">Classic Shoppe Wooden Serving and Cooking Spoons Wood Brown Spoons Kitchen Utensil Set of 7</span>
+                <span class="reporter-method-output">Decorlay Wooden Natural Cooking Spoon, Ladles & Turning Spatulas with Jar Set of 8 |Brown</span>
+                <span class="reporter-method-output">SZHC® Handmade Wooden Non-Stick Serving and Cooking Spoon Set of 7 (Brown)</span>
+                <span class="reporter-method-output">Rozia Pro Hair Brush Wooden Detangling Brushes Natural Detangler Paddle Hairbrush for Women Men Kids Stimulate Scalp Help Growth Add Hair Shine.(Brown)</span>
+                <span class="reporter-method-output">Raja handicraft Wooden Small Sisam Masala Spoon - Set of 5</span>
+                <span class="reporter-method-output">SZHC Beautiful Antique Wooden Folding Side Table (Brown)</span>
+                <span class="reporter-method-output">WOOD ART STORE Wooden sheesham Wood Serving Trays for Dining Table (Brown-12x8x1.5 inch)</span>
+                <span class="reporter-method-output">Serenz Indian Rosewood Sheesham Wood Handmade & Handcrafted Wooden Serving Tray(12X9inches)</span>
+                <span class="reporter-method-output">Savya home­® Multi-Purpose Laptop Table with Drawer/Bed Table/Wooden Foldable Bed Table/LAPDESK/Study Table/Portable Table (Black and Silver Stripes)</span>
+                <span class="reporter-method-output">classic shoppee ABE Handicrafts Wooden Matte Handcrafted Square Antique Finish Folding Stool for Living Room (Dark Brown, 12" inch)</span>
+                <span class="reporter-method-output">Amazon Brand - Solimo Medusa Engineered Wood King Bed with Box Storage (Walnut finish)</span>
+                <span class="reporter-method-output">Amazon Brand - Solimo Medusa Engineered Wood 3 Door Wardrobe (Walnut finish)</span>
+                <span class="reporter-method-output">Amazon Brand - Lindsay 4 Door Engineered Wood Wardrobe with Drawers and Mirror (Wenge finish)</span>
+                <span class="reporter-method-output">The Truffle Co Truffle Slicer</span>
+                <span class="reporter-method-output">ECOPAL - Multipurpose Wooden Cooking Spoon Utensils Set for Non Stick cookware and Serving - Handmade Wooden Spatula - Pack of 3</span>
+                <span class="reporter-method-output">Generic Imported Authentic Standard Wooden 12 Colors Set (120 Pieces)</span>
+                <span class="reporter-method-output">Faiz Products Wooden Spice Box/Masala Box Containers with Spoon for Kitchen Storage 1 Piece Spice Set (Wooden) 1 Piece Spice Set (Wooden)</span>
+                <span class="reporter-method-output">MUSSAL Wooden Handmade Kitchen Cooking Spatule Non Stick Serving Set of 7 & Condiments Masala Spoon Ice-Cream Sugar Salt Spoons Small Spoons (10 pcs)</span>
+                <span class="reporter-method-output">Trustware™ Wooden Support Sticks for Plants/Plant Creepers/Climbers/Plant Stem Support/Climbing Support for Home Indoor & Outdoor Plants-Size 3 feet||12 Pcs</span>
+                <span class="reporter-method-output">VG CRAFT Wooden Condiments Masala Spoon Ice-Cream Sugar Salt Spoons Small Spoons (10 pcs)</span>
+                <span class="reporter-method-output">ECOPAL - Wooden Cooking Spoon Utensils Set for Non Stick cookware - Handmade Teak Wood Spatula - Pack of 2</span>
+                <span class="reporter-method-output">DREAMWIND Neem Wooden Comb Set for Women & Men | Hair Growth |Anti-Dandruff (Pack of 5)</span>
+                <span class="reporter-method-output">Cable World® Zenga Wooden Blocks 54 Pcs Challenging Color Wooden Tumbling Tower, Toys with Dices Board Educational Puzzle Game ( Multi Color )</span>
+                <span class="reporter-method-output">Wooden City Wooden Living Room Side Stand/Wooden Stool/Flower Pot Stand Flower Vase Stand Home Decor Home Furnishing Wooden Multipurpose Folding Rack/Plant Stand</span>
+                <span class="reporter-method-output">Jk Handicrafts Handmade Wooden Jewellery Box for Women Wood Jewel Organizer Hand Carved with Intricate Carvings Gift Items - 6 inches (Brown02)</span>
+                <span class="reporter-method-output">TARKAN Foldable Wooden Laptop Desk for Bed (Walnut Black)</span>
+                <span class="reporter-method-output">SLK Wood Products Wooden Jewellery and Watch Box (Rosewood, 10 Watches)</span>
+                <span class="reporter-method-output">ITOS365 Handmade Wooden Jewellery Box for Women Jewel Organizer Hand Carved Carvings Gift Items</span>
+                <span class="reporter-method-output">Naanjil Eco Friendly Wooden Rural Kitchen Toy Set for Kids, Multi-Colour, Pack of 32</span>
+                <span class="reporter-method-output">Wooden: A Coach's Life</span>
+                <span class="reporter-method-output">Zircon Thick Wooden Bamboo Kitchen Chopping, Cutting, Slicing Board with Holder for Fruits, Vegetables & Meat</span>
+                <span class="reporter-method-output">Wonder Spot (150 Sticks, 8 Inch, 3MM) Wooden Barbecue Sticks Natural Bamboo Skewers BBQ Roast Kabab Grill Chicken Tikka Fruit Salad</span>
+                <span class="reporter-method-output">Simran handicrafts Wooden Spoon Non-Toxic Spatula |Spoons, Wooden Cooking Spoons Set of 2 - Flip Flap (Palta for Dosa/Roti | Handmade | Ideal for Non Stick)</span>
+                <span class="reporter-method-output">Pindia Small Fancy Traditional Wooden Full Carved shingaar Box Set of 2</span>
+                <span class="reporter-method-output">wishkey wooden learning clock with bead lace , educational digital analog numbers, shape & color learning montessori toy for kids- Multi color(Pack of 1)</span>
+                <span class="reporter-method-output">natureCRAFTS Wooden Salt Box for Kitchen or Dining Table Spice and Herb Container | Single Compartment for Salt & Pepper, Jar & Container (size: 3.75 x 3.8 in)</span>
+                <span class="reporter-method-output">Kitchen King Sizzler Tray/Plate with Wooden Base and Cast Iron Plate, (Sheesham) 13X7 Inch,Brown</span>
+                <span class="reporter-method-output">JB KIARA TEXTILES Thick Wooden Bamboo Kitchen Chopping Cutting Slicing Board with Holder for Fruits Vegetables Meat</span>
+                <span class="reporter-method-output">Craftatoz Handmade Wooden Non-Stick Serving and Cooking Spoon Kitchen Tools Utensil, Set of 6</span>
+                <span class="reporter-method-output">Simran Handicrafts Beautiful Table Decor Round Shape Wooden Serving Tray/Platter for Home and Kitchen</span>
+                <span class="reporter-method-output">The Legend Organic Pure Neem Wood Comb, Brown</span>
+                <span class="reporter-method-output">Dr Smith Wooden Bed Study Table Multifunction Laptop Table Lapdesk for Bed Foldabe Table Work Office/Home(Brown)</span>
+                <span class="reporter-method-output">Unique Shape Marvel Avengers Infinity War Pot Groot Wooden Look Tree Flowerpot Cum Pen Container- Tree Man</span>
+                <span class="reporter-method-output">MUSSAL Wooden Condiments Masala Spoon Ice-Cream Sugar Salt Spoons Small Spoons (10 pcs)</span>
+                <span class="reporter-method-output">ITOS365 Jewellery Box for Women Wooden Flip Flap Flower Design Handmade Gift, 8 inches</span>
+                <span class="reporter-method-output">RIDIQA Analog Brown Dial Men's Watch-RD-218</span>
+                <span class="reporter-method-output">RICHTER® Wooden Natural DUSTBIN</span>
+                <span class="reporter-method-output">Amazon Brand - Solimo Vega Engineered Wood 2 Door Wardrobe with Drawer</span>
+                <span class="reporter-method-output">Pioneer's Krisan Stainless Steel LPG Trolley</span>
+                <span class="reporter-method-output">DECORT Pine Wood Gift Basket with Jute Rope Handle and Dried Grass - 10 in x 14 in x 4 in - Fancy Handmade Rectangular Basket ideal for Gifting and Storing Toys, Fruits, Stationery (Brown)</span>
+                <span class="reporter-method-output">₹799</span>
+                <span class="reporter-method-output">₹4,699</span>
+                <span class="reporter-method-output">₹280</span>
+                <span class="reporter-method-output">₹699</span>
+                <span class="reporter-method-output">₹105</span>
+                <span class="reporter-method-output">₹205</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output">₹226</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">₹899</span>
+                <span class="reporter-method-output">₹219</span>
+                <span class="reporter-method-output">₹355</span>
+                <span class="reporter-method-output">₹96</span>
+                <span class="reporter-method-output">₹504</span>
+                <span class="reporter-method-output">₹167</span>
+                <span class="reporter-method-output">₹334</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output">₹399</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output">₹185</span>
+                <span class="reporter-method-output">₹599</span>
+                <span class="reporter-method-output">₹372</span>
+                <span class="reporter-method-output">₹10,999</span>
+                <span class="reporter-method-output">₹11,999</span>
+                <span class="reporter-method-output">₹18,599</span>
+                <span class="reporter-method-output">₹800</span>
+                <span class="reporter-method-output">₹299</span>
+                <span class="reporter-method-output">₹248</span>
+                <span class="reporter-method-output">₹480</span>
+                <span class="reporter-method-output">₹149</span>
+                <span class="reporter-method-output">₹395</span>
+                <span class="reporter-method-output">₹160</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output">₹388</span>
+                <span class="reporter-method-output">₹499</span>
+                <span class="reporter-method-output">₹374</span>
+                <span class="reporter-method-output">₹269</span>
+                <span class="reporter-method-output">₹699</span>
+                <span class="reporter-method-output">₹1,499</span>
+                <span class="reporter-method-output">₹328</span>
+                <span class="reporter-method-output">₹249</span>
+                <span class="reporter-method-output">₹469
+99</span>
+                <span class="reporter-method-output">₹425</span>
+                <span class="reporter-method-output">₹169</span>
+                <span class="reporter-method-output">₹108</span>
+                <span class="reporter-method-output">₹199</span>
+                <span class="reporter-method-output">₹265</span>
+                <span class="reporter-method-output">₹390</span>
+                <span class="reporter-method-output">₹468</span>
+                <span class="reporter-method-output">₹192</span>
+                <span class="reporter-method-output">₹489</span>
+                <span class="reporter-method-output">₹370</span>
+                <span class="reporter-method-output">₹165</span>
+                <span class="reporter-method-output">₹699</span>
+                <span class="reporter-method-output">₹275</span>
+                <span class="reporter-method-output">₹69</span>
+                <span class="reporter-method-output">₹499</span>
+                <span class="reporter-method-output">₹299</span>
+                <span class="reporter-method-output">₹1,599</span>
+                <span class="reporter-method-output">₹9,699</span>
+                <span class="reporter-method-output">₹1,300</span>
+                <span class="reporter-method-output">₹899</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchItem(Electronics, mobiles)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Samsung Galaxy M51 (Electric Blue, 8GB RAM, 128GB Storage) Flat INR 3000 Instant Discount | No Cost EMI</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Redmi 9 (Sky Blue, 4GB RAM, 64GB Storage)| 5000 mAh| 2.3GHz Mediatek Helio G35 Octa core Processor</span>
+                <span class="reporter-method-output">Redmi 9A (Nature Green, 2GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">Oppo A31 (Fantasy White, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Oppo A31 (Mystery Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Redmi Note 9 (Pebble Grey, 4GB RAM 64GB Storage) - 48MP Quad Camera & Full HD+ Display</span>
+                <span class="reporter-method-output">Samsung Galaxy M01 Core (Black, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">Redmi 9 Prime (Matte Black, 4GB RAM, 64GB Storage) - Full HD+ Display & AI Quad Camera</span>
+                <span class="reporter-method-output">Samsung Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)</span>
+                <span class="reporter-method-output">Panasonic Eluga i7 (2GB RAM, 16GB Storage, Finger Print Sensor, 4000mAh Battery) (Black)</span>
+                <span class="reporter-method-output">Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate</span>
+                <span class="reporter-method-output">Redmi 9 (Carbon Black, 4GB RAM, 64GB Storage) | 5000 mAh| 2.3GHz Mediatek Helio G35 Octa core Processor</span>
+                <span class="reporter-method-output">New Apple iPhone 12 Mini (64GB) - White</span>
+                <span class="reporter-method-output">Samsung Galaxy M11 (Metallic Blue, 4GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers</span>
+                <span class="reporter-method-output">OnePlus Nord 5G (Blue Marble, 12GB RAM, 256GB Storage)</span>
+                <span class="reporter-method-output">Redmi Note 10 (Shadow Black, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M12 (Blue,6GB RAM, 128GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate</span>
+                <span class="reporter-method-output">Redmi 9A (Midnight Black, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">OnePlus Nord 5G (Gray Onyx, 12GB RAM, 256GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M31 (Space Black, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)</span>
+                <span class="reporter-method-output">Redmi 9A (Sea Blue, 3GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">Samsung Galaxy M02s (Blue,4GB RAM, 64GB Storage) | 5000 mAh | Triple Camera</span>
+                <span class="reporter-method-output">Redmi 9A (Sea Blue, 2GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">Redmi 9A (Midnight Black, 3GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">Redmi 9A (Nature Green, 3GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor</span>
+                <span class="reporter-method-output">Samsung Galaxy S21 Ultra 5G (Phantom Silver, 12GB, 256GB Storage)</span>
+                <span class="reporter-method-output">Mi 11X Pro (Lunar White, 8GB RAM, 128GB Storage) | Upto INR 4000 Off on HDFC Bank Cards and EMI | Upto 12 Months No Cost EMI</span>
+                <span class="reporter-method-output">₹22,999</span>
+                <span class="reporter-method-output">₹13,999</span>
+                <span class="reporter-method-output">₹8,499</span>
+                <span class="reporter-method-output">₹6,799</span>
+                <span class="reporter-method-output">₹10,990</span>
+                <span class="reporter-method-output">₹13,999</span>
+                <span class="reporter-method-output">₹10,990</span>
+                <span class="reporter-method-output">₹10,999</span>
+                <span class="reporter-method-output">₹6,199</span>
+                <span class="reporter-method-output">₹9,499</span>
+                <span class="reporter-method-output">₹12,499</span>
+                <span class="reporter-method-output">₹5,000</span>
+                <span class="reporter-method-output">₹9,999</span>
+                <span class="reporter-method-output">₹8,499</span>
+                <span class="reporter-method-output">₹58,999</span>
+                <span class="reporter-method-output">₹8,999</span>
+                <span class="reporter-method-output">₹29,999</span>
+                <span class="reporter-method-output">₹14,499</span>
+                <span class="reporter-method-output">₹12,499</span>
+                <span class="reporter-method-output">₹6,799</span>
+                <span class="reporter-method-output">₹29,999</span>
+                <span class="reporter-method-output">₹13,999</span>
+                <span class="reporter-method-output">₹16,999</span>
+                <span class="reporter-method-output">₹7,499</span>
+                <span class="reporter-method-output">₹9,999</span>
+                <span class="reporter-method-output">₹7,499</span>
+                <span class="reporter-method-output">₹7,499</span>
+                <span class="reporter-method-output">₹1,05,999</span>
+                <span class="reporter-method-output">₹39,999</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.testscripts.TC_AmazonSearch_01</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome, https://amazon.in/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchItem(Books, harry potor)</span>
+                <span class="method-start">23792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchItem(Furniture, wooden)</span>
+                <span class="method-start">50061 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchItem(Electronics, mobiles)</span>
+                <span class="method-start">81147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">94441 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
