@@ -5,12 +5,14 @@
 <listener class-name="com.qa.utility.Reporting">
 </listener>
 </listeners>
-<parameter name="Url" value="https://wynk.in/music/"></parameter>
+<parameter name="Url" value="https://www.amazon.in/"></parameter>
 	<test thread-count="5" name="Functional testing1">
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.qa.testscripts.TC_WynkSignIn_01"/>
+			 <class name="com.qa.testscripts.TC_AmazonSearch_01"/>
+			<!-- <class name="com.qa.testscripts.TC_WynkSignIn_01"/> -->
 		</classes>
 	</test>
 </suite>
 <!-- https://wynk.in/music/ -->
+<!-- https://www.amazon.in/ -->

@@ -96,6 +96,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -119,21 +120,29 @@ public class TC_AmazonSearch_01 extends TestBase {
 		AmazonOR.getAmazonSearchBox().sendKeys(Input2);
 		AmazonOR.getSearchButton().click();
 //		Reporter.log(driver.getTitle(),true);
+		Thread.sleep(500);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,1500)");
 		
 		List<WebElement> resultList = AmazonOR.getItems();
-//		int count = resultList.size();
-//		System.out.println("Size : "+count);
-		for (WebElement ele : resultList) {
-			Reporter.log(ele.getText(),true);
-		}
 		List<WebElement> priceList = AmazonOR.getPrice();
 		
-		for (WebElement ele1 : priceList) {
-			Reporter.log(ele1.getText(),true);
+		for (int i = 0; i < resultList.size(); i++) {
+			Reporter.log(resultList.get(i).getText(), true);
+			Reporter.log(priceList.get(i).getText(), true);
 		}
+		System.out.println("********************************************************************");
+		/*int count = resultList.size();
+		System.out.println("Size : "+count);
+		for (WebElement ele : resultList) {
+			Reporter.log(ele.getText(),true);
+		}*/
+		/*for (WebElement ele1 : priceList) {
+			Reporter.log(ele1.getText(),true);
+		}*/
 		
 	}
-	@DataProvider
+	/*@DataProvider
 	public String[][] supplyData(){
 		String[][] data = new String[3][2];
 		data[0][0]="Books";
@@ -145,9 +154,9 @@ public class TC_AmazonSearch_01 extends TestBase {
 		
 		return data;
 		
-	}
+	}*/
 
-	/*@DataProvider
+	@DataProvider
 	public String[][] supplyData() throws IOException{
 		String xlPath="G:\\Virtusa\\TestData.xlsx";
 		
@@ -168,7 +177,7 @@ public class TC_AmazonSearch_01 extends TestBase {
 
 		return data;
 		
-	}*/
+	}
 }
 	/*@Test(dataProvider = "getData", priority = 1)
 	public void AmazonSearch(String input1, String input2) throws InterruptedException {

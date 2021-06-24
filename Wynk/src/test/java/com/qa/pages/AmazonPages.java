@@ -81,13 +81,52 @@ public class AmazonPages {
 	WebDriver driver;
 
 	@FindBy(name = "url")
-
 	WebElement category;
 
 	public void getCategotyField(String item) {
 		Select s = new Select(category);
 		s.selectByVisibleText(item);
 
+	}
+
+	@FindBy(id = "nav-link-accountList")
+	WebElement SigninLink;
+
+	public WebElement getSigninLink() {
+
+		return SigninLink;
+	}
+
+	@FindBy(id = "ap_email")
+	WebElement Apemail;
+
+	public WebElement getApemail() {
+
+		return Apemail;
+	}
+
+	@FindBy(id = "continue")
+	WebElement continueBtn;
+
+	public WebElement getcontinueBtn() {
+
+		return continueBtn;
+	}
+
+	@FindBy(id = "signInSubmit")
+	WebElement AppSignin;
+
+	public WebElement getAppSignin() {
+
+		return AppSignin;
+	}
+
+	@FindBy(id = "ap_password")
+	WebElement Apppassword;
+
+	public WebElement getApppassword() {
+
+		return Apppassword;
 	}
 
 	@FindBy(id = "twotabsearchtextbox")
@@ -133,44 +172,32 @@ public class AmazonPages {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	/*WebDriver driver;
-
-	@FindBy(xpath="//select[@id='searchDropdownBox']")
-	WebElement SearchDropDown;
-	
-	
-	@FindBy(xpath="//input[@id='twotabsearchtextbox']")
-	WebElement searchBox;
-	
-	@FindAll(@FindBy(xpath="//a[@class='a-link-normal a-text-normal']"))
-	List <WebElement> ItemList;
-	
-	@FindAll(@FindBy(className="a-price-whole"))
-	List <WebElement> PriceList;
-	
-	public AmazonPages(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		
-	}
-	
-	public WebElement getSearchDropDown() {
-		return SearchDropDown;
-	}
-
-	public WebElement getSearchBox() {
-		return searchBox;
-	}
-	
-	public List <WebElement> getItemList() {
-		return ItemList;
-	}
-	
-	public List <WebElement> getPriceList() {
-		return PriceList;
-	}
-	
-	*/
+	/*
+	 * WebDriver driver;
+	 * 
+	 * @FindBy(xpath="//select[@id='searchDropdownBox']") WebElement SearchDropDown;
+	 * 
+	 * 
+	 * @FindBy(xpath="//input[@id='twotabsearchtextbox']") WebElement searchBox;
+	 * 
+	 * @FindAll(@FindBy(xpath="//a[@class='a-link-normal a-text-normal']")) List
+	 * <WebElement> ItemList;
+	 * 
+	 * @FindAll(@FindBy(className="a-price-whole")) List <WebElement> PriceList;
+	 * 
+	 * public AmazonPages(WebDriver driver) { this.driver = driver;
+	 * PageFactory.initElements(driver, this);
+	 * 
+	 * }
+	 * 
+	 * public WebElement getSearchDropDown() { return SearchDropDown; }
+	 * 
+	 * public WebElement getSearchBox() { return searchBox; }
+	 * 
+	 * public List <WebElement> getItemList() { return ItemList; }
+	 * 
+	 * public List <WebElement> getPriceList() { return PriceList; }
+	 * 
+	 */
 
 }
-

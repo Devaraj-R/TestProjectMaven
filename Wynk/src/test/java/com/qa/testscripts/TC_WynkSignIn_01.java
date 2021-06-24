@@ -73,7 +73,7 @@ public class TC_WynkSignIn_01 extends TestBase {
 
 	@DataProvider
 	public String[][] supplyData() throws IOException{
-		String xlPath="G:\\Virtusa\\TestData1.xlsx";
+		String xlPath="G:\\Virtusa\\Materials\\TestData1.xlsx";
 		
 		String xlSheet = "Sheet1";
 		
